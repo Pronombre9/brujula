@@ -1,39 +1,8 @@
-input.onGesture(Gesture.LogoUp, function () {
-    basic.showLeds(`
-        . . # . .
-        . . # . .
-        # . # . #
-        . # # # .
-        . . # . .
-        `)
+input.onGesture(Gesture.Shake, function () {
+    led.plot(0, 0)
+    led.toggle(0, 0)
 })
-input.onGesture(Gesture.TiltRight, function () {
-    basic.showLeds(`
-        . . # . .
-        . . . # .
-        # # # # #
-        . . . # .
-        . . # . .
-        `)
-})
-input.onGesture(Gesture.TiltLeft, function () {
-    basic.showLeds(`
-        . . # . .
-        . # . . .
-        # # # # #
-        . # . . .
-        . . # . .
-        `)
-})
-input.onGesture(Gesture.LogoDown, function () {
-    basic.showLeds(`
-        . . . . .
-        . # # # .
-        # . # . #
-        . . # . .
-        . . # . .
-        `)
-})
+let nivel_burbuja = input.acceleration(Dimension.X)
 basic.forever(function () {
 	
 })
