@@ -5,6 +5,7 @@ let pintar_y = 0
 basic.forever(function () {
     x = input.acceleration(Dimension.X)
     y = input.acceleration(Dimension.Y)
+    led.unplot(pintar_x, pintar_y)
     if (x < -1000) {
         pintar_x = 0
     } else if (x < -200) {
